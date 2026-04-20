@@ -1,50 +1,62 @@
-<div class="ambient ambient-one"></div>
-<div class="ambient ambient-two"></div>
-<div class="grain"></div>
-<div class="vignette"></div>
-<div class="particles" id="particles"></div>
-<div class="hearts-layer" id="hearts"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precious – The love of my life</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+  <div class="particles" id="particles"></div>
+  <div class="hearts-layer" id="hearts"></div>
 
-<div class="app">
-  <section class="screen active" id="pin-screen">
-    <div class="panel lock-panel">
-      <p class="eyebrow">for your eyes only</p>
-      <h1 class="hero-title">A letter only your heart can open</h1>
-      <p class="hero-subtitle">Enter the PIN to continue.</p>
+  <div class="app">
+    <section class="screen active" id="pin-screen">
+      <div class="panel lock-panel">
+        <p class="eyebrow">for your eyes only</p>
+        <h1 class="hero-title">A letter only your heart can open</h1>
+        <p class="hero-subtitle">Enter the PIN to continue.</p>
 
-      <div class="pin-group">
-        <input id="pin-input" class="pin-input" type="password" inputmode="numeric" maxlength="4" placeholder="Enter PIN" aria-label="Enter PIN">
-        <button id="unlock-btn" class="romantic-button" type="button">Unlock</button>
+        <div class="pin-group">
+          <input id="pin-input" class="pin-input" type="password" inputmode="numeric" maxlength="4" placeholder="Enter PIN" aria-label="Enter PIN">
+          <button id="unlock-btn" class="romantic-button" type="button">Unlock</button>
+        </div>
+
+        <p id="pin-error" class="error-text" aria-live="polite"></p>
       </div>
+    </section>
 
-      <p id="pin-error" class="error-text" aria-live="polite"></p>
-    </div>
-  </section>
-
-  <section class="screen" id="entry-screen">
-    <div class="panel entry-panel">
-      <p class="eyebrow">one last touch</p>
-      <h2 class="entry-title">There are words here I have kept safe for you.</h2>
-      <button id="open-letter-btn" class="romantic-button large" type="button">Open Letter</button>
-    </div>
-  </section>
-
-  <section class="screen letter-screen" id="letter-screen">
-    <div class="letter-shell">
-      <div class="controls">
-        <button id="music-toggle" class="romantic-button music-button" type="button">Play Music</button>
+    <section class="screen" id="entry-screen">
+      <div class="panel entry-panel">
+        <p class="eyebrow">one last touch</p>
+        <h2 class="entry-title">There are words here I have kept safe for you.</h2>
+        <button id="open-letter-btn" class="romantic-button large" type="button">Open Letter</button>
       </div>
+    </section>
 
-      <article class="letter-card" id="letter-card">
-        <p class="eyebrow">to my dearest</p>
-        <h2 class="letter-title">Precious – The love of my life</h2>
-        <div id="letter-content" class="letter-content"></div>
-        <p id="signature" class="signature">Yours always, Shaun</p>
-      </article>
-    </div>
-  </section>
-</div>
+    <section class="screen letter-screen" id="letter-screen">
+      <div class="letter-shell">
+        <div class="controls">
+          <button id="music-toggle" class="romantic-button music-button" type="button">Play Music</button>
+        </div>
 
-<audio id="bg-music" loop preload="auto">
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
+        <article class="letter-card" id="letter-card">
+          <p class="eyebrow">to my dearest</p>
+          <h2 class="letter-title">Precious – The love of my life</h2>
+          <div id="letter-content" class="letter-content"></div>
+          <p id="signature" class="signature">Yours always, Shaun</p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <audio id="bg-music" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>

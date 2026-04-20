@@ -125,13 +125,7 @@ function playMusic() {
 
   const playAttempt = bgMusic.play();
   if (playAttempt && typeof playAttempt.then === "function") {
-    playAttempt
-      .then(() => {
-        updateMusicButton();
-      })
-      .catch(() => {
-        updateMusicButton();
-      });
+    playAttempt.then(updateMusicButton).catch(updateMusicButton);
   } else {
     updateMusicButton();
   }
